@@ -9,4 +9,4 @@ Baixe o projeto e clique em <b>run</b> para executar o projeto. Obs: É requerid
 
 #### Dúvidas
 
-Caso tenha dúvidas ou algo não esteja funcionando como deveria, fique a vontade para abrir uma issue clicando [aqui](github.com/dougs007/learningAndroid/issues)
+Caso tenha dúvidas ou algo não esteja funcionando como deveria, fique a vontade para abrir uma issue clicando [aqui](https://github.com/dougs007/learningAndroid/issues/new)
