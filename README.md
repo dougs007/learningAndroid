@@ -1,6 +1,6 @@
 # learning Android
 
-Seja bem vindo ao repositório Learning Android, criado com a finalidade real de aprender Android durante a minha formação em Analise de Sistemas.
+Seja bem vindo ao repositório Learning Android, criado com a finalidade real de aprender Android durante a minha formação em Análise e Desenvolvimento de Sistemas.
 
 ## Recursos
 
