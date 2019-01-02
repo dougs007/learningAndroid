@@ -31,28 +31,44 @@ public class MainActivity extends AppCompatActivity {
         cbVerde = findViewById(R.id.cbVerde);
         cbVermelho = findViewById(R.id.cbVermelho);
         rgEstoque = findViewById(R.id.rgEstoque);
+
+        // Chama o método de evento sem necessitar do submit do enviar.
+        verificaRadioButton();
     }
 
     /**
-     *
+     * Evento para captar qual opção no radio foi selecionada.
      */
-    public void verificaRadioButton()
-    {
+    public void verificaRadioButton() {
+        // Verifica se os itens foi selecionado e qual foi.
+        rgEstoque.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                if (checkedId == R.id.rbSim) {
+                    resultado.setText("sim");
+                }else{
+                    resultado.setText("não");
+                }
+
+            }
+        });
 
     }
+
     /**
      * Verifica qual checkbox foi preenchido.
      */
-    public void verificaCheck()
-    {
+    public void verificaCheck() {
         check.clear(); // Limpa a lista e mostra somente os checked atuais.
-        if( cbBranco.isChecked() ){
+        if (cbBranco.isChecked()) {
             check.add(cbBranco.getText().toString());
         }
-        if( cbVerde.isChecked() ){
+        if (cbVerde.isChecked()) {
             check.add(cbVerde.getText().toString());
         }
-        if( cbVermelho.isChecked() ){
+        if (cbVermelho.isChecked()) {
             check.add(cbVermelho.getText().toString());
         }
         resultado.setText(check.toString());
@@ -63,8 +79,7 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param View
      */
-    public void btnEnviar(View View)
-    {
+    public void btnEnviar(View View) {
         /*// Armazena em tx_produto o que foi inserido no formulário no campo de "Nome do Produto".
         String tx_produto = campoProduto.getText().toString();
 
@@ -72,6 +87,5 @@ public class MainActivity extends AppCompatActivity {
         resultado.setText( tx_produto );*/
 
 //        verificaCheck();
-        verificaRadioButton();
     }
 }
