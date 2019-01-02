@@ -52,10 +52,8 @@ public class MainActivity extends AppCompatActivity {
 
         if (resultado >= 0.7) {
             txtResultado.setText("Melhor utilizar a Gasolina");
-            System.out.println("Melhor utilizar a Gasolina");
         } else {
             txtResultado.setText("Melhor utilizar o Álcoll!");
-            System.out.println("Melhor utilizar o Álcoll!");
         }
     }
 
